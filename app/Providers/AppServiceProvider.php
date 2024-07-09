@@ -23,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //默认 Laravel 分页使用 Bootstrap
+        \Illuminate\Pagination\Paginator::useBootstrap();
     }
 }
